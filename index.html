@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio Martin Campagna, Diseñador Gráfico. El estilo de mi trabajo está inclinado a lo minimalista, considero que la sencillez y el equilibro son la base fundamental de mis diseños.">
+    <meta name="keywords" content="logo, diseño, grafico, portfolio, pagina, web, branding, packaging, identidad, marca, proyecto, freelance, diseñador, presupuesto">
+    <link rel="icon" href="./img/Logo Barra.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var botonContacto = document.getElementById('boton-contacto');
+            
+            botonContacto.addEventListener('click', function(event) {
+                event.preventDefault();
+                
+                var seccionContacto = document.getElementById('seccion-contacto');
+                
+                window.scrollTo({
+                    top: seccionContacto.offsetTop,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>    
+    <title>Martín Campagna</title>
+</head>
+<body>
+    <div class="header-gradient"></div>
+    <div class="glassmorphism-layer"></div>
+    <header>
+        <div class="logo">
+            <img src="./img/Logo.png" alt="Logo de Martín Campagna" class="logo-png">
+            <span class="logo-texto">Martín Campagna</span>
+        </div>
+        <div class="menu-hamburguesa" id="menu-hamburguesa">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="menu">
+            <a href="./index.html">Home</a>
+            <a href="./pages/trabajos.html">Trabajos</a>
+            <a href="./pages/uxui.html">UX/UI</a>
+            <a href="./pages/acerca.html">Acerca de mi</a>
+            <a href="#seccion-contacto" id="boton-contacto">Contacto</a>
+        </div>
+    </header>
+    <main>
+        <div class="cta">
+            <div class="call">
+                <section>
+                    <h1><span class="hello-text">Hola!</span> Soy Martín, Diseñador Gráfico, UX/UI & Web Developer.</h1>
+                </section>
+                <div class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Dirección de correo">
+                        <a href="#">Contactame</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="contenedor-general">
+    <div class="servicios">
+        <h2>Servicios</h2>
+        <p>Bienvenidos a mi portfolio, aquí encontrarás algunos de los servicios que ofrezco.</p>
+    </div>
+    <div class="cards-container">
+        <div class="fila">
+            <div class="card">
+                <i class="fas fa-paint-brush"></i>
+                <h4>Diseño Gráfico.</h4>
+                <p>Transformo ideas en imágenes. Desde logotipos hasta material promocional, cada diseño cuenta una historia única.</p>
+                <p><span>Más ></span></p>
+            </div>
+            <div class="card">
+                <i class="fas fa-desktop"></i>
+                <h4>UX/UI.</h4>
+                <p>Crear experiencias digitales intuitivas y atractivas. Diseño centrado en el usuario para aplicaciones y sitios web que cautivan.</p>
+                <p><span>Más ></span></p>
+            </div>
+            <div class="card">
+                <i class="fas fa-code"></i>
+                <h4>Diseño Web.</h4>
+                <p>Diseños web modernos y funcionales que cautivan a los visitantes. Desarrollo a medida para una presencia en línea efectiva y atractiva.</p>
+                <p><span>Más ></span></p>
+            </div>
+        </div>
+        <div class="proyectos">
+            <h2>Ultimos proyectos</h2>
+            <p>Estos son algunos de los últimos proyectos en los que estuve trabajando.</p>
+        </div>
+        <div class="galeria">
+            <div class="card-galeria">
+            <img class="card-imagen" src="./img/portadanomad.png" alt="Portada Nomad">
+            <div class="card-contenido">
+                    <h4>Nomad</h4>
+                    <p>Branding, adaptaciones, iconografia, aplicaciones,</p>
+            </div>
+        </div>
+            <div class="card-galeria">
+            <img class="card-imagen" src="./img/indexcredicoop.png" alt="Portada Credicoop">
+                <div class="card-contenido">
+                    <h4>Rediseño App Banco Credicoop Móvil</h4>
+                    <p>Proyecto para curso Diseño UX/UI Avanzado, CODERHOUSE.</p>
+                </div>
+            </div>
+            <div class="card-galeria">
+            <img class="card-imagen" src="./img/portadagin.png" alt="Portada gin">
+                <div class="card-contenido">
+                    <h4>GIN Enright</h4>
+                    <p>Labeling botella de GIN Naranja.</p>
+                </div>
+            </div>
+            <div class="card-galeria">
+            <img class="card-imagen" src="./img/portadaguanaco.png" alt="Portada guanaco">
+                <div class="card-contenido">
+                    <h4>Vino Guanaco</h4>
+                    <p>Etiqueta botella de vino Guanaco.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="proyecto-final">
+            <h3><a href="./pages/trabajos.html">Ver más</a></h3>
+        </div>
+        <div class="seccion-formulario" id="seccion-contacto">
+            <div class="footer-gradient"></div>
+            <div class="contenido">  
+                <div class="texto">
+                    <h1>Tenés un proyecto en mente?</h1>
+                    <br>
+                    <div class="icono-correo"><i class="fas fa-paper-plane"></i>martincampagna@gmail.com</div>
+                </div>
+                <div class="inputsform" id="inputsform">
+                    <form action="/enviar" method="post">
+                        <input type="text" name="nombre" id="nombre" placeholder="Tu nombre">
+                        <input type="email" name="correo" id="correo" placeholder="Tu correo electrónico">
+                        <input type="number" name="telefono" id="telefono" placeholder="Tu teléfono">
+                        <input type="text" name="ubicacion" id="ubicacion" placeholder="Tu ubicación">
+                        <textarea name="mensaje" id="mensaje" placeholder="Tu mensaje"></textarea>
+                        <input type="submit" value="Enviar" id="enviar">
+                    </form>
+                </div>
+            </div>
+        </div>       
+    <footer class="footer">
+        <div class="redes-links">
+            <a href="https://www.behance.net/martincampagna" class="social-link" target="_blank">Behance</a>
+            <a href="https://www.linkedin.com/in/martincampagna/" class="social-link" target="_blank">Linkedin</a>
+            <a href="https://martincampagna.gumroad.com/" class="social-link" target="_blank">Gumroad</a>
+        </div>
+        <div class="footer-contenido">
+            <p>Copyright 2023 © Martín Campagna - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    </div>
+    <div class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var menuHamburguesa = document.getElementById('menu-hamburguesa');
+            var menu = document.querySelector('.menu');
+        
+            menuHamburguesa.addEventListener('click', function() {
+                menu.classList.toggle('activo');
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var scrollToTopButton = document.getElementById('scrollToTop');
+    
+            function scrollToTop() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }
+    
+            scrollToTopButton.addEventListener('click', scrollToTop);
+    
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 300) {
+                    scrollToTopButton.style.opacity = '1';
+                } else {
+                    scrollToTopButton.style.opacity = '0';
+                }
+            });
+        });
+    </script>
+    
+</body>
+</html>

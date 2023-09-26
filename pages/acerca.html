@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio Martin Campagna, Diseñador Gráfico.">
+    <meta name="keywords" content="logo, diseño, grafico, portfolio, pagina, web, branding, packaging, identidad, marca, proyecto, freelance, diseñador, presupuesto">
+    <link rel="icon" href="../img/Logo Barra.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <title>Acerca de mí</title>
+</head>
+<body>
+    <div class="header-gradient"></div>
+    <div class="glassmorphism-layer"></div>
+    <header>
+        <div class="logo">
+            <img src="../img/Logo.png" alt="Logo de Martín Campagna" class="logo-png">
+            <span class="logo-texto">Martín Campagna</span>
+        </div>
+        <div class="menu-hamburguesa" id="menu-hamburguesa">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="menu">
+            <a href="../index.html">Home</a>
+            <a href="trabajos.html">Trabajos</a>
+            <a href="uxui.html">UX/UI</a>
+            <a href="#">Acerca de mi</a>
+            <a href="../index.html#seccion-contacto" id="boton-contacto">Contacto</a>
+        </div>
+    </header>
+    <main>
+        <div class="cta-acerca">
+            <div class="call-acerca">
+                <section class="acerca-section">
+                    <img src="../img/Perfil copy.jpg" alt="Foto de Perfil">
+                    <div class="text-container">
+                        <h1><span class="acerca-text">Acerca de mí</span></h1>
+                        <p>El estilo de mi trabajo está inclinado a lo minimalista, considero que la sencillez y el equilibro son la base fundamental de mis diseños.
+                        </p>
+                    </div>
+                </section>
+            </div>
+            <div class="segundotexto">
+                <p>Estoy siempre atraído por todo lo que involucre crear, realizo también cuadros y collages digitales.
+                Me gusta estar en los detalles y emprender nuevos desafíos, siempre
+                trabajando para estar a la altura y actualizado.
+                <br>
+                <strong>Por último, y no menos importante, amo la pizza, siempre pizza!</strong></p>
+            </div>
+        </div>
+    </main>
+    <div class="h2acerca">
+        <h2>Mis habilidades y conocimientos</h2>
+    </div>
+    <div class="cardsacerca-container">
+        <div class="fila">
+            <div class="card small-card">
+                <h4>UX DESIGN</h4>
+            </div>
+            <div class="card small-card">
+                <h4>UI DESIGN</h4>
+            </div>
+            <div class="card small-card">
+                <h4>FIGMA</h4>
+            </div>
+            <div class="card small-card">
+                <h4>ILLUSTRATOR</h4>
+            </div>
+            <div class="card small-card">
+                <h4>PHOTOSHOP</h4>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="card small-card">
+                <h4>BRANDING</h4>
+            </div>
+            <div class="card small-card">
+                <h4>PACKAGING</h4>
+            </div>
+            <div class="card small-card">
+                <h4>WIREFRAMES</h4>
+            </div>
+            <div class="card small-card">
+                <h4>HTML/CSS</h4>
+            </div>
+            <div class="card small-card">
+                <h4>PROTOTIPADO</h4>
+            </div>
+        </div>
+    </div>
+    <div class="cardsestudios-container">
+        <div class="filaestudios">
+            <div class="card-estudios">
+                <h4>Diseño Gráfico y Comunicación Visual.</h4>
+                <p>Instituto Tecnológico ORT.</p>
+            </div>
+            <div class="card-estudios">
+                <h4>Diseño UX/UI Básico.</h4>
+                <p>Coderhouse.</p>
+            </div>
+        </div>
+        <div class="filaestudios">
+            <div class="card-estudios">
+                <h4>Diseño UX/UI Avanzado.</h4>
+                <p>Coderhouse.</p>
+            </div>
+            <div class="card-estudios">
+                <h4>Desarrollo Web.</h4>
+                <p>Coderhouse.</p>
+            </div>
+        </div>
+    </div>   
+    <footer class="footer">
+        <div class="redes-links">
+            <a href="https://www.behance.net/martincampagna" class="social-link" target="_blank">Behance</a>
+            <a href="https://www.linkedin.com/in/martincampagna/" class="social-link" target="_blank">Linkedin</a>
+            <a href="https://martincampagna.gumroad.com/" class="social-link" target="_blank">Gumroad</a>
+        </div>
+        <div class="footer-contenido">
+            <p>Copyright 2023 © Martín Campagna - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    </div>
+    <div class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var menuHamburguesa = document.getElementById('menu-hamburguesa');
+            var menu = document.querySelector('.menu');
+        
+            menuHamburguesa.addEventListener('click', function() {
+                menu.classList.toggle('activo');
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var scrollToTopButton = document.getElementById('scrollToTop');
+    
+            function scrollToTop() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }
+    
+            scrollToTopButton.addEventListener('click', scrollToTop);
+    
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 400) {
+                    scrollToTopButton.style.opacity = '1';
+                } else {
+                    scrollToTopButton.style.opacity = '0';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
