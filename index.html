@@ -8,6 +8,7 @@
     <link rel="icon" href="./img/Logo Barra.png" type="image/x-icon">
     <link rel="stylesheet" href="./style/estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             var botonContacto = document.getElementById('boton-contacto');
@@ -69,19 +70,19 @@
     </div>
     <div class="cards-container">
         <div class="fila">
-            <div class="card">
+            <div class="card" data-aos="fade-up">
                 <i class="fas fa-paint-brush"></i>
                 <h4>Diseño Gráfico.</h4>
                 <p>Transformo ideas en imágenes. Desde logotipos hasta material promocional, cada diseño cuenta una historia única.</p>
                 <p><span>Más ></span></p>
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-up">
                 <i class="fas fa-desktop"></i>
                 <h4>UX/UI.</h4>
                 <p>Crear experiencias digitales intuitivas y atractivas. Diseño centrado en el usuario para aplicaciones y sitios web que cautivan.</p>
                 <p><span>Más ></span></p>
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-up">
                 <i class="fas fa-code"></i>
                 <h4>Diseño Web.</h4>
                 <p>Diseños web modernos y funcionales que cautivan a los visitantes. Desarrollo a medida para una presencia en línea efectiva y atractiva.</p>
@@ -93,28 +94,32 @@
             <p>Estos son algunos de los últimos proyectos en los que estuve trabajando.</p>
         </div>
         <div class="galeria">
-            <div class="card-galeria">
+            <div class="card-galeria" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">
             <img class="card-imagen" src="./img/portadanomad.png" alt="Portada Nomad">
             <div class="card-contenido">
                     <h4>Nomad</h4>
                     <p>Branding, adaptaciones, iconografia, aplicaciones,</p>
             </div>
         </div>
-            <div class="card-galeria">
+            <div class="card-galeria" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">
             <img class="card-imagen" src="./img/indexcredicoop.png" alt="Portada Credicoop">
                 <div class="card-contenido">
                     <h4>Rediseño App Banco Credicoop Móvil</h4>
                     <p>Proyecto para curso Diseño UX/UI Avanzado, CODERHOUSE.</p>
                 </div>
             </div>
-            <div class="card-galeria">
+            <div class="card-galeria" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">
             <img class="card-imagen" src="./img/portadagin.png" alt="Portada gin">
                 <div class="card-contenido">
                     <h4>GIN Enright</h4>
                     <p>Labeling botella de GIN Naranja.</p>
                 </div>
             </div>
-            <div class="card-galeria">
+            <div class="card-galeria" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">
             <img class="card-imagen" src="./img/portadaguanaco.png" alt="Portada guanaco">
                 <div class="card-contenido">
                     <h4>Vino Guanaco</h4>
@@ -191,6 +196,10 @@
                 }
             });
         });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
     
 </body>

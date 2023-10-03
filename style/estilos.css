@@ -799,20 +799,22 @@ textarea:hover {
 .acerca-section {
   display: flex;
   align-items: center;
-  max-width: 1000px;
+  max-width: 1140px;
   margin: 40px;
+  margin-left: 0px;
 }
 
 .acerca-section img {
   width: 200px;
   height: auto;
-  margin-right: 50px;
   border-radius: 10px;
 }
 
 .acerca-text {
   font-size: 1.5em;
-  color: #4154FF;
+  margin-left: 50px;
+  align-items: center;
+  color: #000;
 }
 
 .acerca-section p {
@@ -824,10 +826,10 @@ textarea:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 40px auto;
+  margin: 50px auto;
   margin-bottom: 70px;
-  max-width: 1000px;
-  font-size: 1.5em;
+  max-width: 950px;
+  font-size: 1.1em;
   line-height: 1.8;
 }
 
@@ -855,7 +857,7 @@ textarea:hover {
   font-size: 1em;
   font-weight: 600;
   margin-bottom: 8px;
-  margin-top: 8px;
+  margin-top: 6px;
   color: #787878;
 }
 
