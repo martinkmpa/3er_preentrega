@@ -941,7 +941,7 @@ textarea:hover {
   .menu-hamburguesa {
     position: absolute;
     top: 20px;
-    right: 40px;
+    right: 10px;
     width: 50px;
     height: 50px;
     background: rgba(255, 255, 255, 0);
@@ -1103,5 +1103,8 @@ textarea:hover {
     flex-direction: column;
     align-items: center;
     width: 80%;
+  }
+  .footer-gradient {
+    transform: scale(0.5);
   }
 }/*# sourceMappingURL=estilos.css.map */
